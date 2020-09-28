@@ -1,18 +1,18 @@
 import React from "react";
-import {SafeAreaView, View, Text, Pressable} from "react-native";
-import { ScrollView } from "react-native-gesture-handler";
+import {SafeAreaView, View, Text, Pressable, ScrollView} from "react-native";
+
 
 const Login = (props) => {
     let {navigation} = props;
 
-    const login = () => {
+    const submitLogin = async () => {
         navigation.navigate("ListProductPage");
     }
 
     return (
         <SafeAreaView>
             <ScrollView>      
-                <Pressable onPress={login}>
+                <Pressable onPress={submitLogin}>
                     <Text>Login</Text>
                 </Pressable>
             </ScrollView>
