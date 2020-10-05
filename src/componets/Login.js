@@ -5,7 +5,7 @@ import {SafeAreaView, View, Text, Pressable, ScrollView} from "react-native";
 const Login = (props) => {
     let {navigation} = props;
 
-    const submitLogin = async () => {
+    const submitLogin = async () => {                
         navigation.navigate("ListProductPage");
     }
 
