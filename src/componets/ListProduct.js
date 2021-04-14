@@ -58,7 +58,7 @@ const ListProduct = () => {
                 <View style={styles.imageRow}>
                     {getVehicleImage(id)}
                     <Text style={styles.imageStyle}>
-                        {brand}
+                        {name}
                     </Text>
                 </View>
                 <View style={styles.rightContainer}>
@@ -67,13 +67,13 @@ const ListProduct = () => {
                             <Text style={styles.originSellingTitle}>{`Original \n Selling`}</Text>
                         </View>
                         <View style={styles.priceContainer}>
-                            <Text style={styles.mainPrice}>15000</Text>
-                            <Text style={styles.discountPrice}>12000</Text>
+                            <Text style={styles.mainPrice}>{originalPrice}</Text>
+                            <Text style={styles.discountPrice}>{sellingPrice}</Text>
                         </View>
                         <View style={styles.categoryProduct}>
-                            <Text>Fujifilm</Text>
-                            <Text>APS-C</Text>
-                            <Text>Mirrorless</Text>
+                            <Text>{brand}</Text>
+                            <Text>{type}</Text>
+                            <Text>{category}</Text>
                         </View>
                         <View style={styles.chevonRight}>
                             <Image source={require('../assets/chevonright.png')} resizeMode={'cover'} style={styles.imageChevron} />
